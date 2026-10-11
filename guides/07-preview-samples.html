@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Step 7 — Preview and samples (wizard steps 5 and 6) — Minecraft MIDI Studio</title>
+<meta name="description" content="Turn any MIDI file into music played in your Minecraft Java world.">
+<link rel="icon" href="../img/app.png">
+<link rel="stylesheet" href="../style.css">
+</head>
+<body>
+<header><nav class="nav">
+<a class="brand" href="../index.html"><img src="../img/app.png" alt="">Minecraft MIDI Studio</a>
+<div class="links">
+<a href="../index.html#guides">Guides</a>
+<a href="https://github.com/YOUR-GITHUB-NAME/minecraft-midi-studio/releases/latest">Download (free)</a>
+<a href="https://ko-fi.com/YOUR-KOFI-NAME">Get the full edition</a>
+<a href="../fr/guides/07-preview-samples.html" hreflang="fr">Français</a>
+</div></nav></header>
+<main>
+<article><div class="dl"><a class="btn" href="../pdf/en/07-preview-samples.pdf">⬇ PDF</a></div><h1>Step 7 — Preview and samples (wizard steps 5 and 6)</h1>
+<p><strong>Goal:</strong> hear the real Minecraft result, then prepare all the audio files.</p>
+<h2>Preview (step 5)</h2>
+<figure><img src="../img/en/09_listen.png" alt="Converted preview" loading="lazy"><figcaption>Converted preview</figcaption></figure>
+<ol><li>The samples needed for the preview are prepared automatically (the first time takes a few seconds).</li><li><strong>Converted (Minecraft samples)</strong> plays the song as the game will: notes aligned on 50 ms ticks, each sound played in full, 8 velocity levels.</li><li><strong>Original MIDI</strong> switches back to the original at the same position, to compare.</li><li><strong>Listen to</strong> lets you hear one track only.</li></ol>
+<h2>Samples (step 6)</h2>
+<figure><img src="../img/en/10_samples.png" alt="Sample generation" loading="lazy"><figcaption>Sample generation</figcaption></figure>
+<p>One audio file is prepared <strong>for each note actually played</strong>, so Minecraft never has to change the pitch of a sound (that is what makes the result clean).</p>
+<ul><li><strong>Margin for /pitch</strong> — extra notes so that the in-game <code>/function music:pitch</code> command always finds a sample.</li><li><strong>Notes outside an instrument's range</strong> — moved to the nearest octave, skipped, or generated anyway.</li><li><strong>Maximum length of a sample</strong> — long sounds are shortened with a fade.</li><li><strong>Normalisation</strong> — same perceived volume for every note of an instrument.</li><li><strong>Method</strong> per instrument — <em>resampling</em> (classic note block sound) or <em>pitch only</em> (keeps the duration, better for voices).</li></ul>
+<p>Click <strong>Generate the samples</strong>. Samples already made with the same settings are reused from the cache.</p>
+<p><strong>Next guide:</strong> the structure.</p><div class="pager"><a class="btn" href="06-instruments.html">← Previous</a><a class="btn primary" href="08-structure.html">Next →</a></div></article>
+</main>
+<footer><div class="in">Unofficial software. Not approved by or associated with Mojang Studios or Microsoft. Minecraft is a trademark of Mojang AB.<br>Version 0.5.1 · <a href="https://github.com/YOUR-GITHUB-NAME/minecraft-midi-studio">GitHub</a> · <a href="../privacy.html">Privacy</a></div></footer>
+</body>
+</html>

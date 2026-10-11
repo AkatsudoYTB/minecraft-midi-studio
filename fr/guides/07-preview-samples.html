@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Étape 7 — Préécoute et échantillons (étapes 5 et 6 de l&#x27;assistant) — Minecraft MIDI Studio</title>
+<meta name="description" content="Transformez n&#x27;importe quel fichier MIDI en musique jouée dans votre monde Minecraft Java.">
+<link rel="icon" href="../../img/app.png">
+<link rel="stylesheet" href="../../style.css">
+</head>
+<body>
+<header><nav class="nav">
+<a class="brand" href="../../fr/index.html"><img src="../../img/app.png" alt="">Minecraft MIDI Studio</a>
+<div class="links">
+<a href="../../fr/index.html#guides">Guides</a>
+<a href="https://github.com/YOUR-GITHUB-NAME/minecraft-midi-studio/releases/latest">Télécharger (gratuit)</a>
+<a href="https://ko-fi.com/YOUR-KOFI-NAME">Obtenir l'édition complète</a>
+<a href="../../guides/07-preview-samples.html" hreflang="en">English</a>
+</div></nav></header>
+<main>
+<article><div class="dl"><a class="btn" href="../../pdf/fr/07-preview-samples.pdf">⬇ PDF</a></div><h1>Étape 7 — Préécoute et échantillons (étapes 5 et 6 de l'assistant)</h1>
+<p><strong>Objectif :</strong> entendre le vrai rendu Minecraft, puis préparer tous les fichiers audio.</p>
+<h2>Préécoute (étape 5)</h2>
+<figure><img src="../../img/fr/09_listen.png" alt="Préécoute convertie" loading="lazy"><figcaption>Préécoute convertie</figcaption></figure>
+<ol><li>Les échantillons nécessaires à la préécoute sont préparés tout seuls (la première fois prend quelques secondes).</li><li><strong>Converti (échantillons Minecraft)</strong> joue le morceau comme le jeu le fera : notes calées sur les ticks de 50 ms, chaque son joué en entier, 8 niveaux de vélocité.</li><li><strong>MIDI original</strong> revient à l'original à la même position, pour comparer.</li><li><strong>Écouter</strong> permet de n'entendre qu'une piste.</li></ol>
+<h2>Échantillons (étape 6)</h2>
+<figure><img src="../../img/fr/10_samples.png" alt="Génération des échantillons" loading="lazy"><figcaption>Génération des échantillons</figcaption></figure>
+<p>Un fichier audio est préparé <strong>pour chaque note réellement jouée</strong> : Minecraft n'a jamais à changer la hauteur d'un son (c'est ce qui rend le résultat propre).</p>
+<ul><li><strong>Marge pour /pitch</strong> — des notes en plus pour que la commande <code>/function music:pitch</code> trouve toujours un échantillon.</li><li><strong>Notes hors de la plage d'un instrument</strong> — ramenées à l'octave, ignorées, ou générées quand même.</li><li><strong>Durée maximale d'un échantillon</strong> — les sons longs sont raccourcis avec un fondu.</li><li><strong>Normalisation</strong> — même volume perçu pour toutes les notes d'un instrument.</li><li><strong>Méthode</strong> par instrument — <em>rééchantillonnage</em> (son de note block classique) ou <em>hauteur seule</em> (garde la durée, mieux pour les voix).</li></ul>
+<p>Cliquez sur <strong>Générer les échantillons</strong>. Les échantillons déjà faits avec les mêmes réglages sont repris du cache.</p>
+<p><strong>Guide suivant :</strong> la structure.</p><div class="pager"><a class="btn" href="06-instruments.html">← Précédent</a><a class="btn primary" href="08-structure.html">Suivant →</a></div></article>
+</main>
+<footer><div class="in">Logiciel non officiel. Non approuvé par Mojang Studios ni Microsoft et sans lien avec eux. Minecraft est une marque de Mojang AB.<br>Version 0.5.1 · <a href="https://github.com/YOUR-GITHUB-NAME/minecraft-midi-studio">GitHub</a> · <a href="../../fr/privacy.html">Confidentialité</a></div></footer>
+</body>
+</html>

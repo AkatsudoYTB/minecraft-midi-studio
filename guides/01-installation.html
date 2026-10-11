@@ -1,0 +1,43 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Step 1 — Installation — Minecraft MIDI Studio</title>
+<meta name="description" content="Turn any MIDI file into music played in your Minecraft Java world.">
+<link rel="icon" href="../img/app.png">
+<link rel="stylesheet" href="../style.css">
+</head>
+<body>
+<header><nav class="nav">
+<a class="brand" href="../index.html"><img src="../img/app.png" alt="">Minecraft MIDI Studio</a>
+<div class="links">
+<a href="../index.html#guides">Guides</a>
+<a href="https://github.com/YOUR-GITHUB-NAME/minecraft-midi-studio/releases/latest">Download (free)</a>
+<a href="https://ko-fi.com/YOUR-KOFI-NAME">Get the full edition</a>
+<a href="../fr/guides/01-installation.html" hreflang="fr">Français</a>
+</div></nav></header>
+<main>
+<article><div class="dl"><a class="btn" href="../pdf/en/01-installation.pdf">⬇ PDF</a></div><h1>Step 1 — Installation</h1>
+<p><strong>Goal:</strong> download Minecraft MIDI Studio and start it for the first time (about 5 minutes).</p>
+<h2>What you need</h2>
+<ul><li>A Windows 10 or 11 computer (64-bit).</li><li>An internet connection at the first start (about 41 MB, only once: see below).</li><li><strong>Minecraft Java Edition</strong>, to play the music in your world. It does <strong>not</strong> need to be started before: the software finds the worlds of the official launcher, Modrinth, CurseForge and Prism Launcher by itself.</li><li>About 350 MB of free disk space (program, official sounds, sample cache).</li></ul>
+<p><strong>Note Block Studio is not needed.</strong> If it is installed, the full edition can also use its custom sounds.</p>
+<h2>Download</h2>
+<ol><li>Open the <strong>Download</strong> page of the website (GitHub <em>Releases</em>).</li><li>Download <code>MinecraftMidiStudio-&lt;version&gt;-windows.exe</code>.</li><li>Put it in a folder of your choice, for example <code>Documents\Minecraft MIDI Studio</code>.</li></ol>
+<h2>First start</h2>
+<ol><li>Double-click <code>MinecraftMidiStudio.exe</code>.</li><li>Windows may show <em>“Windows protected your PC”</em> (the program is not signed with a paid certificate). Click <strong>More info</strong>, then <strong>Run anyway</strong>. This only happens the first time.</li><li>The first start takes a few seconds longer: the program unpacks itself once into your cache folder.</li><li>The <strong>Home</strong> page opens.</li></ol>
+<figure><img src="../img/en/01_home_free.png" alt="The home page" loading="lazy"><figcaption>The home page</figcaption></figure>
+<h2>The official Minecraft sounds</h2>
+<p>The instrument and mob sounds, and the textures of the icons, belong to Mojang: they are not inside the program. The first time they are needed (opening the catalog or a project):</p>
+<ul><li>if Minecraft 1.21.1 is installed on the computer, the software uses its files;</li><li>otherwise it <strong>downloads them itself from Mojang's official servers</strong>, like a launcher: about 41 MB, only once, every file being checked against the fingerprint published by Mojang.</li></ul>
+<p>The progress is shown at the bottom of the window. Without internet, the software says so; the <strong>Download now</strong> button of the <em>Settings</em> page starts the download again later.</p>
+<h2>Where are my files?</h2>
+<table><thead><tr><th>What</th><th>Where</th></tr></thead><tbody><tr><td>Settings and license activation</td><td><code>%APPDATA%\MinecraftMidiStudio</code></td></tr><tr><td>Downloaded official sounds</td><td><code>%LOCALAPPDATA%\MinecraftMidiStudio\minecraft</code></td></tr><tr><td>Logs, sample cache, world backups</td><td><code>%LOCALAPPDATA%\MinecraftMidiStudio</code></td></tr><tr><td>Your projects</td><td>wherever you save them (<code>.mmsproj</code> files)</td></tr></tbody></table>
+<h2>Uninstall</h2>
+<p>Delete <code>MinecraftMidiStudio.exe</code>. To also remove your settings, the downloaded sounds, the cache and the backups, delete the two folders above. Nothing else is installed on your computer.</p>
+<p><strong>Next guide:</strong> first settings.</p><div class="pager"><a class="btn" href="../index.html#guides">← All guides</a><a class="btn primary" href="02-settings.html">Next →</a></div></article>
+</main>
+<footer><div class="in">Unofficial software. Not approved by or associated with Mojang Studios or Microsoft. Minecraft is a trademark of Mojang AB.<br>Version 0.5.1 · <a href="https://github.com/YOUR-GITHUB-NAME/minecraft-midi-studio">GitHub</a> · <a href="../privacy.html">Privacy</a></div></footer>
+</body>
+</html>

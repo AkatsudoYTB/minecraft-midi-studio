@@ -1,0 +1,175 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Minecraft MIDI Studio — Guides</title>
+<meta name="description" content="Turn any MIDI file into music played in your Minecraft Java world.">
+<link rel="icon" href="../img/app.png">
+<link rel="stylesheet" href="../style.css">
+</head>
+<body>
+<header><nav class="nav">
+<a class="brand" href="../index.html"><img src="../img/app.png" alt="">Minecraft MIDI Studio</a>
+<div class="links">
+<a href="../index.html#guides">Guides</a>
+<a href="https://github.com/YOUR-GITHUB-NAME/minecraft-midi-studio/releases/latest">Download (free)</a>
+<a href="https://ko-fi.com/YOUR-KOFI-NAME">Get the full edition</a>
+<a href="fr/index.html" hreflang="fr">Français</a>
+</div></nav></header>
+<main>
+<article><h1>Step 1 — Installation</h1>
+<p><strong>Goal:</strong> download Minecraft MIDI Studio and start it for the first time (about 5 minutes).</p>
+<h2>What you need</h2>
+<ul><li>A Windows 10 or 11 computer (64-bit).</li><li>An internet connection at the first start (about 41 MB, only once: see below).</li><li><strong>Minecraft Java Edition</strong>, to play the music in your world. It does <strong>not</strong> need to be started before: the software finds the worlds of the official launcher, Modrinth, CurseForge and Prism Launcher by itself.</li><li>About 350 MB of free disk space (program, official sounds, sample cache).</li></ul>
+<p><strong>Note Block Studio is not needed.</strong> If it is installed, the full edition can also use its custom sounds.</p>
+<h2>Download</h2>
+<ol><li>Open the <strong>Download</strong> page of the website (GitHub <em>Releases</em>).</li><li>Download <code>MinecraftMidiStudio-&lt;version&gt;-windows.exe</code>.</li><li>Put it in a folder of your choice, for example <code>Documents\Minecraft MIDI Studio</code>.</li></ol>
+<h2>First start</h2>
+<ol><li>Double-click <code>MinecraftMidiStudio.exe</code>.</li><li>Windows may show <em>“Windows protected your PC”</em> (the program is not signed with a paid certificate). Click <strong>More info</strong>, then <strong>Run anyway</strong>. This only happens the first time.</li><li>The first start takes a few seconds longer: the program unpacks itself once into your cache folder.</li><li>The <strong>Home</strong> page opens.</li></ol>
+<figure><img src="../img/en/01_home_free.png" alt="The home page" loading="lazy"><figcaption>The home page</figcaption></figure>
+<h2>The official Minecraft sounds</h2>
+<p>The instrument and mob sounds, and the textures of the icons, belong to Mojang: they are not inside the program. The first time they are needed (opening the catalog or a project):</p>
+<ul><li>if Minecraft 1.21.1 is installed on the computer, the software uses its files;</li><li>otherwise it <strong>downloads them itself from Mojang's official servers</strong>, like a launcher: about 41 MB, only once, every file being checked against the fingerprint published by Mojang.</li></ul>
+<p>The progress is shown at the bottom of the window. Without internet, the software says so; the <strong>Download now</strong> button of the <em>Settings</em> page starts the download again later.</p>
+<h2>Where are my files?</h2>
+<table><thead><tr><th>What</th><th>Where</th></tr></thead><tbody><tr><td>Settings and license activation</td><td><code>%APPDATA%\MinecraftMidiStudio</code></td></tr><tr><td>Downloaded official sounds</td><td><code>%LOCALAPPDATA%\MinecraftMidiStudio\minecraft</code></td></tr><tr><td>Logs, sample cache, world backups</td><td><code>%LOCALAPPDATA%\MinecraftMidiStudio</code></td></tr><tr><td>Your projects</td><td>wherever you save them (<code>.mmsproj</code> files)</td></tr></tbody></table>
+<h2>Uninstall</h2>
+<p>Delete <code>MinecraftMidiStudio.exe</code>. To also remove your settings, the downloaded sounds, the cache and the backups, delete the two folders above. Nothing else is installed on your computer.</p>
+<p><strong>Next guide:</strong> first settings.</p><div style="break-after:page"></div><h1>Step 2 — First settings</h1>
+<p><strong>Goal:</strong> choose the language and check where the sounds come from (usually nothing to change).</p>
+<p>Open the <strong>Settings</strong> page from the left menu.</p>
+<figure><img src="../img/en/04_settings.png" alt="The settings page" loading="lazy"><figcaption>The settings page</figcaption></figure>
+<h2>Language</h2>
+<ol><li>In <strong>Language</strong>, choose <strong>English</strong> or <strong>Français</strong>.</li><li>Click <strong>Restart now</strong> (or simply restart the program later).</li></ol>
+<p>The language is saved. It is also used for the messages of the datapack (in-game chat) and the description of the resource pack generated afterwards.</p>
+<h2>Official Minecraft sounds</h2>
+<p>Usually nothing to do: the software uses the sounds of your Minecraft, or downloads them itself from Mojang's official servers (see step 1). This section shows the version used and lets you:</p>
+<ul><li><strong>Download now</strong> — start the download again (after an internet cut, for example);</li><li><strong>Delete the downloaded files</strong> — free about 41 MB (they will be downloaded again when needed);</li><li>untick the <strong>automatic download</strong> if you prefer to use only your Minecraft installation.</li></ul>
+<h2>Sound and game sources</h2>
+<ul><li><strong>Note Block Studio sounds (optional)</strong> — only to add its custom sounds to the full edition. Usually detected automatically (<code>…\Minecraft Note Block Studio\Data\Sounds</code>); if not, <strong>Browse…</strong>.</li><li><strong>Minecraft folder</strong> — leave it on <em>Automatic</em> if you use the official launcher. Modrinth, CurseForge and Prism Launcher instances are found by themselves.</li><li><strong>Added instances</strong> — only if your game folder is somewhere unusual: click <strong>Add…</strong> and choose the folder that contains <code>saves</code>.</li><li><strong>World backups</strong> — where the ZIP backups made before installing are stored.</li></ul>
+<h2>Timeline and audio</h2>
+<ul><li>The <strong>colours</strong> of the timeline (blue = silence, green = notes playing) can be changed.</li><li><strong>Audio output</strong> and <strong>Preview volume</strong> only affect the preview inside the software, not the game.</li></ul>
+<p><strong>Next guide:</strong> choose your world.</p><div style="break-after:page"></div><h1>Step 3 — Choose a world (wizard step 1)</h1>
+<p><strong>Goal:</strong> pick the Minecraft world where the music structure will be placed.</p>
+<ol><li>On the <strong>Home</strong> page, click <strong>New project</strong>. The <strong>Wizard</strong> opens on step 1, <em>World</em>.</li><li>The list shows every world found (official launcher, Modrinth, CurseForge, Prism). A world you create while the program is open appears by itself; <strong>Refresh the list</strong> forces a new search.</li><li>Click a world: its version, game mode, commands and folder are shown below.</li><li>Click <strong>Use this world</strong>.</li></ol>
+<figure><img src="../img/en/05_world.png" alt="Choosing a world" loading="lazy"><figcaption>Choosing a world</figcaption></figure>
+<h2>Good to know</h2>
+<ul><li><strong>Commands must be allowed</strong> in the world (the music is controlled with <code>/function</code>). If they are not: in game, <em>Open to LAN → Allow commands</em>, or use a server.</li><li><strong>Close the world in Minecraft</strong> before installing the music (step 10). The software checks it.</li><li><strong>Create a ZIP backup…</strong> copies the whole world into your backup folder without changing it. A backup is also offered automatically before any installation.</li><li>Nothing is written into the world at this step.</li></ul>
+<p><strong>Next guide:</strong> import your MIDI file.</p><div style="break-after:page"></div><h1>Step 4 — Import a MIDI file (wizard step 2)</h1>
+<p><strong>Goal:</strong> load the song you want to hear in Minecraft.</p>
+<ol><li>Click <strong>Next</strong> to reach step 2, <em>MIDI</em>.</li><li>Drag a <code>.mid</code> / <code>.midi</code> file onto the drop zone, or click <strong>Choose a MIDI file…</strong>.</li><li>The analysis runs in the background: tempo and tempo changes, duration, tracks, channels, instruments, notes, chords and percussion.</li></ol>
+<figure><img src="../img/en/06_midi.png" alt="MIDI analysis" loading="lazy"><figcaption>MIDI analysis</figcaption></figure>
+<h2>What you see</h2>
+<ul><li><strong>File information</strong> — size, format, resolution, duration, initial tempo, time signature, key, number of tracks and notes.</li><li><strong>Tempo changes</strong> — the table on the right lists every change (they are respected in game).</li><li><strong>Warnings</strong> — for example tracks without a name, notes without an end, or a percussion track on a melodic channel.</li></ul>
+<p>A copy of the MIDI file is stored inside the project, so the project still works if you move or delete the original file.</p>
+<blockquote><strong>Free edition:</strong> only the first 20 seconds of the song are played and converted. The full edition converts the whole song.</blockquote>
+<p><strong>Next guide:</strong> choose the tracks.</p><div style="break-after:page"></div><h1>Step 5 — Choose the tracks (wizard step 3)</h1>
+<p><strong>Goal:</strong> keep only the tracks you want in Minecraft, and listen to them.</p>
+<figure><img src="../img/en/07_tracks.png" alt="Track selection" loading="lazy"><figcaption>Track selection</figcaption></figure>
+<ol><li><strong>Tick</strong> the tracks to convert. Buttons: <strong>Select all</strong>, <strong>Select none</strong>, <strong>Invert</strong>.</li><li>Click <strong>Play</strong> (or press <em>Space</em>) to hear the ticked tracks.</li><li>Click the <strong>▶</strong> button at the start of a row to hear <strong>that track alone</strong>, without changing the ticks. Click <strong>■</strong> to stop. The coloured bar then shows the notes of that track only.</li></ol>
+<h2>The timeline</h2>
+<ul><li><strong>Blue</strong>: no note is playing. <strong>Green</strong>: at least one note is playing.</li><li>The lighter veil shows the part already played.</li><li>Click the bar to jump anywhere; <strong>← / →</strong> move by 5 seconds.</li><li><strong>Per-track view</strong> shows one row per ticked track.</li></ul>
+<p>The sound stops by itself when you go to another step.</p>
+<blockquote>The sound here comes from a small built-in synthesizer: it is only there to recognise the song. The real Minecraft sound is heard in step 5, <em>Preview</em>.</blockquote>
+<blockquote><strong>Free edition:</strong> up to 3 ticked tracks and 300 played notes.</blockquote>
+<p><strong>Next guide:</strong> instruments.</p><div style="break-after:page"></div><h1>Step 6 — Instruments and drums (wizard step 4)</h1>
+<p><strong>Goal:</strong> give each track a Minecraft sound.</p>
+<figure><img src="../img/en/08_instruments.png" alt="Instrument setup" loading="lazy"><figcaption>Instrument setup</figcaption></figure>
+<ol><li>Each track gets an <strong>automatic suggestion</strong> (from its name, its MIDI instrument and its range). The reason is written under the sound.</li><li>To change it: choose another sound in the catalog on the right (search box, categories, <strong>Listen</strong>), then click <strong>Assign the selected sound to the track</strong>.</li><li>Adjust the <strong>Relative volume</strong> and the <strong>Transposition</strong> (in semitones) of the track.</li><li><strong>Lowest note / Highest note</strong> let you hear the extremes of the track with the chosen sound.</li></ol>
+<h2>Drum tracks</h2>
+<p>A percussion track uses a <strong>key → sound</strong> table: each drum key (kick, snare, hi-hat…) is linked to a sound and a transposition, the way Note Block Studio creators do it. Keys without a sound can be ignored or played with the snare drum. <strong>Restore the default table</strong> undoes your changes.</p>
+<h2>Sounds available</h2>
+<ul><li><strong>Note blocks</strong> (official Minecraft files: those of your installation, or downloaded from Mojang).</li><li><strong>Mob sounds</strong> of the selected Minecraft version, sorted by category (voice, hurt, movement…).</li><li><strong>Custom sounds</strong> placed in the Note Block Studio <code>Custom</code> folder (full edition, if Note Block Studio is installed).</li></ul>
+<blockquote><strong>Free edition:</strong> 8 basic note block instruments (no pling, bell, chime, flute, guitar, xylophones or bit), and only the voices of 3 farm animals for mob sounds.</blockquote>
+<p><strong>Next guide:</strong> preview and samples.</p><div style="break-after:page"></div><h1>Step 7 — Preview and samples (wizard steps 5 and 6)</h1>
+<p><strong>Goal:</strong> hear the real Minecraft result, then prepare all the audio files.</p>
+<h2>Preview (step 5)</h2>
+<figure><img src="../img/en/09_listen.png" alt="Converted preview" loading="lazy"><figcaption>Converted preview</figcaption></figure>
+<ol><li>The samples needed for the preview are prepared automatically (the first time takes a few seconds).</li><li><strong>Converted (Minecraft samples)</strong> plays the song as the game will: notes aligned on 50 ms ticks, each sound played in full, 8 velocity levels.</li><li><strong>Original MIDI</strong> switches back to the original at the same position, to compare.</li><li><strong>Listen to</strong> lets you hear one track only.</li></ol>
+<h2>Samples (step 6)</h2>
+<figure><img src="../img/en/10_samples.png" alt="Sample generation" loading="lazy"><figcaption>Sample generation</figcaption></figure>
+<p>One audio file is prepared <strong>for each note actually played</strong>, so Minecraft never has to change the pitch of a sound (that is what makes the result clean).</p>
+<ul><li><strong>Margin for /pitch</strong> — extra notes so that the in-game <code>/function music:pitch</code> command always finds a sample.</li><li><strong>Notes outside an instrument's range</strong> — moved to the nearest octave, skipped, or generated anyway.</li><li><strong>Maximum length of a sample</strong> — long sounds are shortened with a fade.</li><li><strong>Normalisation</strong> — same perceived volume for every note of an instrument.</li><li><strong>Method</strong> per instrument — <em>resampling</em> (classic note block sound) or <em>pitch only</em> (keeps the duration, better for voices).</li></ul>
+<p>Click <strong>Generate the samples</strong>. Samples already made with the same settings are reused from the cache.</p>
+<p><strong>Next guide:</strong> the structure.</p><div style="break-after:page"></div><h1>Step 8 — The structure (wizard step 7)</h1>
+<p><strong>Goal:</strong> choose how the music looks in the world.</p>
+<figure><img src="../img/en/11_structure.png" alt="Structure settings" loading="lazy"><figcaption>Structure settings</figcaption></figure>
+<h2>What gets built</h2>
+<ul><li><strong>Powered rails side by side</strong>, lit by redstone torches under the floor.</li><li>The minecarts appear at the far end and travel towards you.</li><li>Above the <strong>trigger line</strong>: an arch of command blocks and a <strong>coloured block that lights up</strong> when the note plays (one colour per track).</li><li>After the line, the minecarts <strong>fall into a lava pit</strong>.</li><li>At the front, on your side: a <strong>button console</strong> (play, pause, stop, volume −/+, tempo −/+, pitch −/+) with signs.</li></ul>
+<p>The sound and the flashes are triggered by the datapack's sequencer: the minecarts are only visual, so the music stays in time even if the server slows down.</p>
+<h2>Layout settings</h2>
+<ul><li><strong>Lanes</strong> — one per track (compact), one per played note (piano roll) or one per pitch.</li><li><strong>Gap between rails</strong> — 1 = rails right next to each other.</li><li><strong>Rail length</strong> and <strong>Minecart speed</strong> — they decide how long before its note a minecart appears.</li><li><strong>Rails after the line</strong> — distance to the lava.</li><li><strong>Floor</strong>, <strong>Resting block</strong> of the arch, <strong>Flash duration</strong>, <strong>Track colours</strong>.</li><li><strong>Button console</strong>, <strong>Signs with the lane names</strong>, <strong>Who hears the music</strong> (everyone, or players near the structure).</li></ul>
+<h2>Optimisation</h2>
+<p>Choose a profile: <strong>Best quality</strong>, <strong>Balanced</strong> or <strong>Performance</strong>. <em>Custom</em> (full edition) unlocks every setting: maximum active minecarts, minecart density, minecart reuse, simultaneous notes per tick… The <strong>Estimates</strong> panel shows the size, the number of blocks, the minecarts and the estimated server load in real time.</p>
+<p><strong>Next guide:</strong> 3D preview and position.</p><div style="break-after:page"></div><h1>Step 9 — 3D preview and position (wizard steps 8 and 9)</h1>
+<h2>3D preview (step 8)</h2>
+<figure><img src="../img/en/12_preview.png" alt="3D preview" loading="lazy"><figcaption>3D preview</figcaption></figure>
+<ul><li><strong>Left click + drag</strong>: rotate. <strong>Right click + drag</strong>: move. <strong>Wheel</strong>: zoom. <strong>Double click</strong>: default view.</li><li><strong>3D view / Top / Side</strong>: preset views. Layers can be hidden (minecarts, zones, labels).</li><li><strong>Animate</strong> replays the real schedule: minecarts and flashes exactly as the datapack will produce them.</li></ul>
+<h2>Position (step 9)</h2>
+<figure><img src="../img/en/13_placement.png" alt="Position in the world" loading="lazy"><figcaption>Position in the world</figcaption></figure>
+<ol><li><strong>X / Y / Z</strong> is the <strong>front corner</strong> of the structure, on the console side, where you stand. The structure extends behind it.</li><li><strong>The minecarts travel towards</strong> — the direction the minecarts move (towards you).</li><li><strong>In front of the player (last save)</strong> places the console 2 blocks in front of your last saved position, centred on you.</li><li><strong>Place on the ground</strong> sets Y just above the highest ground under the structure.</li><li>The <strong>World view</strong> map (read-only) shows the footprint in blue and your last position in yellow. The number of existing blocks that would be replaced is shown.</li><li>Click <strong>Confirm this position</strong>.</li></ol>
+<blockquote>Tip: close Minecraft before opening this step to see an up-to-date map.</blockquote>
+<p><strong>Next guide:</strong> generate and install.</p><div style="break-after:page"></div><h1>Step 10 — Generate, install and check (wizard steps 10 and 11)</h1>
+<h2>Generation (step 10)</h2>
+<figure><img src="../img/en/15_generate_after.png" alt="Generation" loading="lazy"><figcaption>Generation</figcaption></figure>
+<ol><li>The <strong>Checks</strong> list must be green: world closed in Minecraft, structure and samples ready, position confirmed.</li><li><strong>Packs and options</strong> — pack name, description, version, icon.</li><li>Click <strong>Generate and install in the world…</strong>.</li><li>A <strong>confirmation window</strong> lists exactly what will happen: files written, structure area, world backup. Confirm.</li><li>The software makes a <strong>ZIP backup of the world</strong>, then installs:<ul><li>the datapack in <code>datapacks/music_mmstudio.zip</code>;</li><li>the <strong>world's resource pack</strong> (<code>resources.zip</code> in 1.21, <code>resourcepacks/resources.zip</code> in 26.x): Minecraft loads it automatically when the world opens, and only in that world.</li></ul></li></ol>
+<p>No file is ever deleted: a replaced file is moved into the backup folder.</p>
+<p><strong>Generate the files only</strong> writes nothing into the world (for a server or a manual installation).</p>
+<h2>Check (step 11)</h2>
+<figure><img src="../img/en/16_verify.png" alt="Check" loading="lazy"><figcaption>Check</figcaption></figure>
+<p>Click <strong>Check</strong>: the files are re-read exactly as the game will read them (every sound event exists and is a valid OGG Vorbis file, every sound used by the datapack is in the resource pack, the installed files are identical). The in-game commands are listed below.</p>
+<p><strong>Next guide:</strong> in Minecraft.</p><div style="break-after:page"></div><h1>Step 11 — In Minecraft</h1>
+<p><strong>Goal:</strong> build the structure and play the music.</p>
+<ol><li>Start Minecraft and open the world. Its resource pack is <strong>loaded automatically</strong> — nothing to enable in the pack menu.</li><li>In the chat, click <strong>[Build at …]</strong>, or type:<p><code>/function music:build</code> (you must be an operator / have cheats enabled). The chunks are loaded, then the structure is built.</p></li><li>Click <strong>[Start the music]</strong>, press the <strong>Play</strong> button of the console, or type:<p><code>/function music:play</code></p></li></ol>
+<h2>All the commands</h2>
+<table><thead><tr><th>Command</th><th>Effect</th></tr></thead><tbody><tr><td><code>/function music:play</code></td><td>play / resume</td></tr><tr><td><code>/function music:pause</code></td><td>pause</td></tr><tr><td><code>/function music:stop</code></td><td>stop and clean up</td></tr><tr><td><code>/function music:restart</code></td><td>start again</td></tr><tr><td><code>/function music:volume {v:150}</code></td><td>volume from 10 to 500 %</td></tr><tr><td><code>/function music:tempo {bpm:140}</code></td><td>tempo</td></tr><tr><td><code>/function music:pitch {st:-2}</code></td><td>pitch in semitones (−24 to 24)</td></tr><tr><td><code>/function music:speed {pct:-5}</code></td><td>speed in % (−90 to 300)</td></tr><tr><td><code>/function music:seek {s:30}</code></td><td>go to 30 seconds</td></tr><tr><td><code>/function music:lanes</code></td><td>listen to each lane (clickable list)</td></tr><tr><td><code>/function music:status</code> / <code>help</code></td><td>current settings / clickable help</td></tr><tr><td><code>/function music:remove</code></td><td>remove the structure (asks for confirmation)</td></tr><tr><td><code>/function music:uninstall</code></td><td>remove the datapack's scoreboards</td></tr></tbody></table>
+<p><strong>Players who are not operators</strong> use <code>/trigger music.play</code>, <code>/trigger music.pause</code>, <code>/trigger music.stop</code>, <code>/trigger music.volume set 150</code> (same for <code>tempo</code>, <code>pitch</code>, <code>speed</code>).</p>
+<p>The <strong>button console</strong> in front of the structure does the same: play, pause, stop, volume, tempo, pitch.</p>
+<blockquote>A literal <code>/play music</code> command is impossible in vanilla Minecraft without a mod: the music is controlled with datapack functions.</blockquote>
+<p><strong>Next guide:</strong> free and full editions.</p><div style="break-after:page"></div><h1>Step 12 — Free and full editions, license</h1>
+<h2>Free edition</h2>
+<p>Without a license the software is the <strong>free edition</strong>. Everything works, within these limits:</p>
+<figure><img src="../img/en/02_license_free.png" alt="Free edition" loading="lazy"><figcaption>Free edition</figcaption></figure>
+<ul><li>Songs: the first <strong>20 seconds</strong>.</li><li>Up to <strong>3 tracks</strong> and <strong>300 notes</strong> played.</li><li><strong>8 basic instruments</strong> (no pling, bell, chime, flute, guitar, xylophones or bit).</li><li>Mob sounds: only the <strong>voices of 3 farm animals</strong>.</li><li>No custom sounds, custom optimisation profile or server export.</li><li>A short <em>“free edition”</em> message in the chat when the music starts.</li><li>In the game, the music cannot be slowed down below its original speed.</li></ul>
+<h2>Buying the full edition</h2>
+<p>The full edition is <strong>tied to your Google account</strong>. A key only works with the account it was bought for: even copied, it is useless to anyone else.</p>
+<ol><li>Click <strong>Buy the full edition</strong> (License page): you are taken to the shop.</li><li>Pay with <strong>your Google (Gmail) address</strong>, or write it in the order message if you pay with another address.</li><li>You receive a <strong>license key</strong> by e-mail. It starts with <code>MMS-</code>.</li></ol>
+<h2>Activating the key</h2>
+<ol><li>Open the <strong>License</strong> page and paste the whole key.</li><li>Click <strong>Activate with Google</strong>. The software checks the key, then your browser opens <strong>Google's official sign-in page</strong>.</li><li>Sign in with the Google account shown, then accept. The page says <em>“Signed in”</em>: go back to the software.</li></ol>
+<figure><img src="../img/en/03_license_full.png" alt="Full edition activated" loading="lazy"><figcaption>Full edition activated</figcaption></figure>
+<p>The full edition is unlocked immediately, without restarting. Afterwards the software works <strong>without internet</strong> on this computer.</p>
+<h2>Changing computer</h2>
+<p>The key is kept in a hidden folder of your Google Drive reserved for the software (it does not appear among your files). On another computer, on the <strong>License</strong> page, click <strong>Get my license back with Google</strong> and sign in: that's all, no key needed.</p>
+<p><strong>Remove the license from this computer</strong> removes the activation from this computer only; the license stays in your Google account.</p>
+<h2>Privacy</h2>
+<ul><li>You sign in on Google's page, in your browser: the software <strong>never sees your password</strong>.</li><li>It only receives your <strong>e-mail address</strong> (to check that the key is yours) and access to the <strong>software's hidden folder</strong> in your Google Drive, where the key is kept. It cannot see your other files.</li><li><strong>Nothing is sent to the author</strong> or anywhere else. On the computer, the activation is stored encrypted.</li></ul>
+<p>Details: <strong>Privacy</strong> page of the website.</p>
+<p><strong>Next guide:</strong> playing on a server.</p><div style="break-after:page"></div><h1>Step 13 — Playing on a server</h1>
+<p><strong>Goal:</strong> use the music on a multiplayer server (full edition).</p>
+<ol><li>In step 11, click <strong>Export for a server…</strong> and choose a folder. You get:<ul><li><code>music_mmstudio.zip</code> (the datapack);</li><li>the resource pack (<code>.zip</code>);</li><li><code>README-SERVER.txt</code>: the instructions, with the pack's <strong>SHA-1</strong>.</li></ul></li><li><strong>Datapack</strong>: copy <code>music_mmstudio.zip</code> into <code>&lt;server world&gt;/datapacks/</code>, then type <code>/reload</code> (or restart the server).</li><li><strong>Resource pack</strong>: put the resource pack at a <strong>direct download address</strong> (HTTP or HTTPS), then in <code>server.properties</code>:<pre><code>resource-pack=&lt;address of the file&gt;
+resource-pack-sha1=&lt;SHA-1 given in the instructions&gt;
+require-resource-pack=true   (optional)</code></pre></li></ol>
+<ol start="4"><li>For the button console: <code>enable-command-block=true</code> in <code>server.properties</code>.</li><li>In game, as an operator: <code>/function music:build</code>, then <code>/function music:play</code>.</li></ol>
+<p>Players who are not operators control the music with <code>/trigger music.play</code>, <code>/trigger music.volume set 150</code>, etc.</p>
+<blockquote>The sounds of the pack are Minecraft's (they belong to Mojang): use them for your server, but do not publish the pack.</blockquote>
+<p><strong>Next guide:</strong> troubleshooting.</p><div style="break-after:page"></div><h1>Step 14 — Troubleshooting</h1>
+<h2>No sound in game</h2>
+<ol><li>Did you open the world <strong>after</strong> installing? The world's resource pack is loaded when the world opens.</li><li>Watch for a pack error message when the world opens. Run <strong>Check</strong> (step 11) again: it must say <em>Check passed</em>.</li><li>Check the game's <strong>Jukebox/Note Blocks</strong> volume slider (<em>Options → Music &amp; Sounds</em>).</li><li>Try <code>/function music:volume {v:150}</code>.</li><li>In the log of Minecraft (<code>.minecraft\logs\latest.log</code>), a line <em>“Unable to play unknown soundEvent”</em> means the resource pack is not loaded: generate and install again.</li></ol>
+<h2>The structure is not built</h2>
+<ul><li>Commands must be allowed (operator / cheats).</li><li>If the area could not be loaded in 30 s, nothing is changed: try again.</li></ul>
+<h2>“Official Minecraft sounds not downloaded”</h2>
+<p>The first download (about 41 MB from Mojang's servers) could not be done, usually because there is no internet. Check the connection, then <em>Settings → Official Minecraft sounds → Download now</em>. An antivirus or a company firewall may also block <code>piston-meta.mojang.com</code> and <code>resources.download.minecraft.net</code>.</p>
+<h2>The license does not activate</h2>
+<ul><li><em>“This key was bought for the Google account …”</em>: sign in with the Google account shown (its first letter and domain are displayed). If you paid with another address, ask the author for a key for your Google address.</li><li><em>“No license is stored in the Google account”</em>: use <strong>Activate with Google</strong> with the key received by e-mail (the first time); then <strong>Get my license back</strong> works on your other computers.</li><li>Google's page does not come back to the software: keep the software open while signing in, and let your firewall accept the local connection (address <code>127.0.0.1</code>).</li><li><em>“This activation comes from another computer”</em>: normal after copying your settings; click <strong>Get my license back with Google</strong>.</li></ul>
+<h2>A world does not appear in the list</h2>
+<ul><li>It appears by itself after a moment; <strong>Refresh the list</strong> forces a search.</li><li>For an unusual game folder: <strong>Add an instance folder…</strong> (step 1) or <em>Settings → Added instances</em>.</li></ul>
+<h2>The software shows an error</h2>
+<p>Open <strong>Diagnostics</strong>: it shows the detected environment, runs a <strong>self-test</strong> and shows the log. <strong>Copy the report</strong> or <strong>Export the report…</strong> to share it when you ask for help. Nothing is ever sent automatically.</p>
+<figure><img src="../img/en/19_diagnostics.png" alt="Diagnostics" loading="lazy"><figcaption>Diagnostics</figcaption></figure>
+<h2>Undo everything in a world</h2>
+<ul><li>In game: <code>/function music:remove</code> (removes the structure), then <code>/function music:uninstall</code>.</li><li>Then delete <code>datapacks/music_mmstudio.zip</code> and the world's <code>resources.zip</code> (or <code>resourcepacks/resources.zip</code>).</li><li>Or restore the ZIP backup made before the installation.</li></ul><div style="break-after:page"></div></article>
+</main>
+<footer><div class="in">Unofficial software. Not approved by or associated with Mojang Studios or Microsoft. Minecraft is a trademark of Mojang AB.<br>Version 0.5.1 · <a href="https://github.com/YOUR-GITHUB-NAME/minecraft-midi-studio">GitHub</a> · <a href="../privacy.html">Privacy</a></div></footer>
+</body>
+</html>

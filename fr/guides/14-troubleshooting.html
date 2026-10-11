@@ -1,0 +1,40 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Étape 14 — En cas de problème — Minecraft MIDI Studio</title>
+<meta name="description" content="Transformez n&#x27;importe quel fichier MIDI en musique jouée dans votre monde Minecraft Java.">
+<link rel="icon" href="../../img/app.png">
+<link rel="stylesheet" href="../../style.css">
+</head>
+<body>
+<header><nav class="nav">
+<a class="brand" href="../../fr/index.html"><img src="../../img/app.png" alt="">Minecraft MIDI Studio</a>
+<div class="links">
+<a href="../../fr/index.html#guides">Guides</a>
+<a href="https://github.com/YOUR-GITHUB-NAME/minecraft-midi-studio/releases/latest">Télécharger (gratuit)</a>
+<a href="https://ko-fi.com/YOUR-KOFI-NAME">Obtenir l'édition complète</a>
+<a href="../../guides/14-troubleshooting.html" hreflang="en">English</a>
+</div></nav></header>
+<main>
+<article><div class="dl"><a class="btn" href="../../pdf/fr/14-troubleshooting.pdf">⬇ PDF</a></div><h1>Étape 14 — En cas de problème</h1>
+<h2>Pas de son en jeu</h2>
+<ol><li>Avez-vous ouvert le monde <strong>après</strong> l'installation ? Le pack de ressources du monde est chargé à l'ouverture du monde.</li><li>Surveillez un message d'erreur de pack à l'ouverture du monde. Relancez <strong>Vérifier</strong> (étape 11) : il doit afficher <em>Vérification réussie</em>.</li><li>Vérifiez le volume <strong>Juke-box/Blocs musicaux</strong> du jeu (<em>Options → Musique et sons</em>).</li><li>Essayez <code>/function music:volume {v:150}</code>.</li><li>Dans le journal de Minecraft (<code>.minecraft\logs\latest.log</code>), une ligne <em>« Unable to play unknown soundEvent »</em> veut dire que le resource pack n'est pas chargé : générez et installez à nouveau.</li></ol>
+<h2>La structure ne se construit pas</h2>
+<ul><li>Les commandes doivent être autorisées (opérateur / triches).</li><li>Si la zone n'a pas pu être chargée en 30 s, rien n'est modifié : réessayez.</li></ul>
+<h2>« Sons officiels de Minecraft non téléchargés »</h2>
+<p>Le premier téléchargement (environ 41 Mo depuis les serveurs de Mojang) n'a pas pu se faire, en général faute d'internet. Vérifiez la connexion, puis <em>Paramètres → Sons officiels de Minecraft → Télécharger maintenant</em>. Un antivirus ou un pare-feu d'entreprise peut aussi bloquer <code>piston-meta.mojang.com</code> et <code>resources.download.minecraft.net</code>.</p>
+<h2>La licence ne s'active pas</h2>
+<ul><li><em>« Cette clé a été achetée pour le compte Google … »</em> : connectez-vous avec le compte Google indiqué (son début et son domaine sont affichés). Si vous avez payé avec une autre adresse, demandez à l'auteur une clé pour votre adresse Google.</li><li><em>« Aucune licence n'est enregistrée dans le compte Google »</em> : utilisez <strong>Activer avec Google</strong> avec la clé reçue par e-mail (la première fois), puis <strong>Récupérer ma licence</strong> marchera sur vos autres ordinateurs.</li><li>La page de Google ne revient pas vers le logiciel : gardez le logiciel ouvert pendant la connexion, et laissez votre pare-feu accepter la connexion locale (adresse <code>127.0.0.1</code>).</li><li><em>« Cette activation vient d'un autre ordinateur »</em> : normal après une copie de vos paramètres ; cliquez sur <strong>Récupérer ma licence avec Google</strong>.</li></ul>
+<h2>Un monde n'apparaît pas dans la liste</h2>
+<ul><li>Il apparaît tout seul après un instant ; <strong>Actualiser la liste</strong> relance la recherche.</li><li>Pour un dossier de jeu inhabituel : <strong>Ajouter un dossier d'instance…</strong> (étape 1) ou <em>Paramètres → Instances ajoutées</em>.</li></ul>
+<h2>Le logiciel affiche une erreur</h2>
+<p>Ouvrez <strong>Diagnostic</strong> : la page montre l'environnement détecté, lance un <strong>autotest</strong> et affiche le journal. <strong>Copier le rapport</strong> ou <strong>Exporter le rapport…</strong> pour le partager quand vous demandez de l'aide. Rien n'est jamais envoyé automatiquement.</p>
+<figure><img src="../../img/fr/19_diagnostics.png" alt="Diagnostic" loading="lazy"><figcaption>Diagnostic</figcaption></figure>
+<h2>Tout retirer d'un monde</h2>
+<ul><li>En jeu : <code>/function music:remove</code> (retire la structure), puis <code>/function music:uninstall</code>.</li><li>Supprimez ensuite <code>datapacks/music_mmstudio.zip</code> et le <code>resources.zip</code> du monde (ou <code>resourcepacks/resources.zip</code>).</li><li>Ou restaurez la sauvegarde ZIP faite avant l'installation.</li></ul><div class="pager"><a class="btn" href="13-server.html">← Précédent</a></div></article>
+</main>
+<footer><div class="in">Logiciel non officiel. Non approuvé par Mojang Studios ni Microsoft et sans lien avec eux. Minecraft est une marque de Mojang AB.<br>Version 0.5.1 · <a href="https://github.com/YOUR-GITHUB-NAME/minecraft-midi-studio">GitHub</a> · <a href="../../fr/privacy.html">Confidentialité</a></div></footer>
+</body>
+</html>

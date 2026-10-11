@@ -1,0 +1,33 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Step 11 — In Minecraft — Minecraft MIDI Studio</title>
+<meta name="description" content="Turn any MIDI file into music played in your Minecraft Java world.">
+<link rel="icon" href="../img/app.png">
+<link rel="stylesheet" href="../style.css">
+</head>
+<body>
+<header><nav class="nav">
+<a class="brand" href="../index.html"><img src="../img/app.png" alt="">Minecraft MIDI Studio</a>
+<div class="links">
+<a href="../index.html#guides">Guides</a>
+<a href="https://github.com/YOUR-GITHUB-NAME/minecraft-midi-studio/releases/latest">Download (free)</a>
+<a href="https://ko-fi.com/YOUR-KOFI-NAME">Get the full edition</a>
+<a href="../fr/guides/11-in-game.html" hreflang="fr">Français</a>
+</div></nav></header>
+<main>
+<article><div class="dl"><a class="btn" href="../pdf/en/11-in-game.pdf">⬇ PDF</a></div><h1>Step 11 — In Minecraft</h1>
+<p><strong>Goal:</strong> build the structure and play the music.</p>
+<ol><li>Start Minecraft and open the world. Its resource pack is <strong>loaded automatically</strong> — nothing to enable in the pack menu.</li><li>In the chat, click <strong>[Build at …]</strong>, or type:<p><code>/function music:build</code> (you must be an operator / have cheats enabled). The chunks are loaded, then the structure is built.</p></li><li>Click <strong>[Start the music]</strong>, press the <strong>Play</strong> button of the console, or type:<p><code>/function music:play</code></p></li></ol>
+<h2>All the commands</h2>
+<table><thead><tr><th>Command</th><th>Effect</th></tr></thead><tbody><tr><td><code>/function music:play</code></td><td>play / resume</td></tr><tr><td><code>/function music:pause</code></td><td>pause</td></tr><tr><td><code>/function music:stop</code></td><td>stop and clean up</td></tr><tr><td><code>/function music:restart</code></td><td>start again</td></tr><tr><td><code>/function music:volume {v:150}</code></td><td>volume from 10 to 500 %</td></tr><tr><td><code>/function music:tempo {bpm:140}</code></td><td>tempo</td></tr><tr><td><code>/function music:pitch {st:-2}</code></td><td>pitch in semitones (−24 to 24)</td></tr><tr><td><code>/function music:speed {pct:-5}</code></td><td>speed in % (−90 to 300)</td></tr><tr><td><code>/function music:seek {s:30}</code></td><td>go to 30 seconds</td></tr><tr><td><code>/function music:lanes</code></td><td>listen to each lane (clickable list)</td></tr><tr><td><code>/function music:status</code> / <code>help</code></td><td>current settings / clickable help</td></tr><tr><td><code>/function music:remove</code></td><td>remove the structure (asks for confirmation)</td></tr><tr><td><code>/function music:uninstall</code></td><td>remove the datapack's scoreboards</td></tr></tbody></table>
+<p><strong>Players who are not operators</strong> use <code>/trigger music.play</code>, <code>/trigger music.pause</code>, <code>/trigger music.stop</code>, <code>/trigger music.volume set 150</code> (same for <code>tempo</code>, <code>pitch</code>, <code>speed</code>).</p>
+<p>The <strong>button console</strong> in front of the structure does the same: play, pause, stop, volume, tempo, pitch.</p>
+<blockquote>A literal <code>/play music</code> command is impossible in vanilla Minecraft without a mod: the music is controlled with datapack functions.</blockquote>
+<p><strong>Next guide:</strong> free and full editions.</p><div class="pager"><a class="btn" href="10-generate.html">← Previous</a><a class="btn primary" href="12-license.html">Next →</a></div></article>
+</main>
+<footer><div class="in">Unofficial software. Not approved by or associated with Mojang Studios or Microsoft. Minecraft is a trademark of Mojang AB.<br>Version 0.5.1 · <a href="https://github.com/YOUR-GITHUB-NAME/minecraft-midi-studio">GitHub</a> · <a href="../privacy.html">Privacy</a></div></footer>
+</body>
+</html>

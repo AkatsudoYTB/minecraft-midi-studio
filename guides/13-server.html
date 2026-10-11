@@ -1,0 +1,33 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Step 13 — Playing on a server — Minecraft MIDI Studio</title>
+<meta name="description" content="Turn any MIDI file into music played in your Minecraft Java world.">
+<link rel="icon" href="../img/app.png">
+<link rel="stylesheet" href="../style.css">
+</head>
+<body>
+<header><nav class="nav">
+<a class="brand" href="../index.html"><img src="../img/app.png" alt="">Minecraft MIDI Studio</a>
+<div class="links">
+<a href="../index.html#guides">Guides</a>
+<a href="https://github.com/YOUR-GITHUB-NAME/minecraft-midi-studio/releases/latest">Download (free)</a>
+<a href="https://ko-fi.com/YOUR-KOFI-NAME">Get the full edition</a>
+<a href="../fr/guides/13-server.html" hreflang="fr">Français</a>
+</div></nav></header>
+<main>
+<article><div class="dl"><a class="btn" href="../pdf/en/13-server.pdf">⬇ PDF</a></div><h1>Step 13 — Playing on a server</h1>
+<p><strong>Goal:</strong> use the music on a multiplayer server (full edition).</p>
+<ol><li>In step 11, click <strong>Export for a server…</strong> and choose a folder. You get:<ul><li><code>music_mmstudio.zip</code> (the datapack);</li><li>the resource pack (<code>.zip</code>);</li><li><code>README-SERVER.txt</code>: the instructions, with the pack's <strong>SHA-1</strong>.</li></ul></li><li><strong>Datapack</strong>: copy <code>music_mmstudio.zip</code> into <code>&lt;server world&gt;/datapacks/</code>, then type <code>/reload</code> (or restart the server).</li><li><strong>Resource pack</strong>: put the resource pack at a <strong>direct download address</strong> (HTTP or HTTPS), then in <code>server.properties</code>:<pre><code>resource-pack=&lt;address of the file&gt;
+resource-pack-sha1=&lt;SHA-1 given in the instructions&gt;
+require-resource-pack=true   (optional)</code></pre></li></ol>
+<ol start="4"><li>For the button console: <code>enable-command-block=true</code> in <code>server.properties</code>.</li><li>In game, as an operator: <code>/function music:build</code>, then <code>/function music:play</code>.</li></ol>
+<p>Players who are not operators control the music with <code>/trigger music.play</code>, <code>/trigger music.volume set 150</code>, etc.</p>
+<blockquote>The sounds of the pack are Minecraft's (they belong to Mojang): use them for your server, but do not publish the pack.</blockquote>
+<p><strong>Next guide:</strong> troubleshooting.</p><div class="pager"><a class="btn" href="12-license.html">← Previous</a><a class="btn primary" href="14-troubleshooting.html">Next →</a></div></article>
+</main>
+<footer><div class="in">Unofficial software. Not approved by or associated with Mojang Studios or Microsoft. Minecraft is a trademark of Mojang AB.<br>Version 0.5.1 · <a href="https://github.com/YOUR-GITHUB-NAME/minecraft-midi-studio">GitHub</a> · <a href="../privacy.html">Privacy</a></div></footer>
+</body>
+</html>

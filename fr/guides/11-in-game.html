@@ -1,0 +1,33 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Étape 11 — Dans Minecraft — Minecraft MIDI Studio</title>
+<meta name="description" content="Transformez n&#x27;importe quel fichier MIDI en musique jouée dans votre monde Minecraft Java.">
+<link rel="icon" href="../../img/app.png">
+<link rel="stylesheet" href="../../style.css">
+</head>
+<body>
+<header><nav class="nav">
+<a class="brand" href="../../fr/index.html"><img src="../../img/app.png" alt="">Minecraft MIDI Studio</a>
+<div class="links">
+<a href="../../fr/index.html#guides">Guides</a>
+<a href="https://github.com/YOUR-GITHUB-NAME/minecraft-midi-studio/releases/latest">Télécharger (gratuit)</a>
+<a href="https://ko-fi.com/YOUR-KOFI-NAME">Obtenir l'édition complète</a>
+<a href="../../guides/11-in-game.html" hreflang="en">English</a>
+</div></nav></header>
+<main>
+<article><div class="dl"><a class="btn" href="../../pdf/fr/11-in-game.pdf">⬇ PDF</a></div><h1>Étape 11 — Dans Minecraft</h1>
+<p><strong>Objectif :</strong> construire la structure et lancer la musique.</p>
+<ol><li>Lancez Minecraft et ouvrez le monde. Son pack de ressources est <strong>chargé tout seul</strong> — rien à activer dans le menu des packs.</li><li>Dans le chat, cliquez sur <strong>[Construire en …]</strong>, ou tapez :<p><code>/function music:build</code> (il faut être opérateur / avoir les triches activées). Les chunks sont chargés, puis la structure est construite.</p></li><li>Cliquez sur <strong>[Lancer la musique]</strong>, appuyez sur le bouton <strong>Lecture</strong> de la console, ou tapez :<p><code>/function music:play</code></p></li></ol>
+<h2>Toutes les commandes</h2>
+<table><thead><tr><th>Commande</th><th>Effet</th></tr></thead><tbody><tr><td><code>/function music:play</code></td><td>lecture / reprise</td></tr><tr><td><code>/function music:pause</code></td><td>pause</td></tr><tr><td><code>/function music:stop</code></td><td>arrêt et nettoyage</td></tr><tr><td><code>/function music:restart</code></td><td>recommencer</td></tr><tr><td><code>/function music:volume {v:150}</code></td><td>volume de 10 à 500 %</td></tr><tr><td><code>/function music:tempo {bpm:140}</code></td><td>tempo</td></tr><tr><td><code>/function music:pitch {st:-2}</code></td><td>hauteur en demi-tons (−24 à 24)</td></tr><tr><td><code>/function music:speed {pct:-5}</code></td><td>vitesse en % (−90 à 300)</td></tr><tr><td><code>/function music:seek {s:30}</code></td><td>aller à 30 secondes</td></tr><tr><td><code>/function music:lanes</code></td><td>écouter chaque voie (liste cliquable)</td></tr><tr><td><code>/function music:status</code> / <code>help</code></td><td>réglages actuels / aide cliquable</td></tr><tr><td><code>/function music:remove</code></td><td>retirer la structure (demande confirmation)</td></tr><tr><td><code>/function music:uninstall</code></td><td>retirer les scores du datapack</td></tr></tbody></table>
+<p><strong>Les joueurs non opérateurs</strong> utilisent <code>/trigger music.play</code>, <code>/trigger music.pause</code>, <code>/trigger music.stop</code>, <code>/trigger music.volume set 150</code> (idem pour <code>tempo</code>, <code>pitch</code>, <code>speed</code>).</p>
+<p>La <strong>console de boutons</strong> devant la structure fait la même chose : lecture, pause, arrêt, volume, tempo, hauteur.</p>
+<blockquote>Une commande littérale <code>/play music</code> est impossible dans Minecraft vanilla sans mod : la musique se contrôle avec des fonctions de datapack.</blockquote>
+<p><strong>Guide suivant :</strong> éditions gratuite et complète.</p><div class="pager"><a class="btn" href="10-generate.html">← Précédent</a><a class="btn primary" href="12-license.html">Suivant →</a></div></article>
+</main>
+<footer><div class="in">Logiciel non officiel. Non approuvé par Mojang Studios ni Microsoft et sans lien avec eux. Minecraft est une marque de Mojang AB.<br>Version 0.5.1 · <a href="https://github.com/YOUR-GITHUB-NAME/minecraft-midi-studio">GitHub</a> · <a href="../../fr/privacy.html">Confidentialité</a></div></footer>
+</body>
+</html>

@@ -1,0 +1,43 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Étape 1 — Installation — Minecraft MIDI Studio</title>
+<meta name="description" content="Transformez n&#x27;importe quel fichier MIDI en musique jouée dans votre monde Minecraft Java.">
+<link rel="icon" href="../../img/app.png">
+<link rel="stylesheet" href="../../style.css">
+</head>
+<body>
+<header><nav class="nav">
+<a class="brand" href="../../fr/index.html"><img src="../../img/app.png" alt="">Minecraft MIDI Studio</a>
+<div class="links">
+<a href="../../fr/index.html#guides">Guides</a>
+<a href="https://github.com/YOUR-GITHUB-NAME/minecraft-midi-studio/releases/latest">Télécharger (gratuit)</a>
+<a href="https://ko-fi.com/YOUR-KOFI-NAME">Obtenir l'édition complète</a>
+<a href="../../guides/01-installation.html" hreflang="en">English</a>
+</div></nav></header>
+<main>
+<article><div class="dl"><a class="btn" href="../../pdf/fr/01-installation.pdf">⬇ PDF</a></div><h1>Étape 1 — Installation</h1>
+<p><strong>Objectif :</strong> télécharger Minecraft MIDI Studio et le lancer une première fois (environ 5 minutes).</p>
+<h2>Ce qu'il faut</h2>
+<ul><li>Un ordinateur sous Windows 10 ou 11 (64 bits).</li><li>Une connexion à internet au premier lancement (environ 41 Mo, une seule fois : voir plus bas).</li><li><strong>Minecraft Java Edition</strong>, pour jouer la musique dans votre monde. Il n'a <strong>pas</strong> besoin d'être lancé avant : le logiciel trouve tout seul les mondes du launcher officiel, de Modrinth, de CurseForge et de Prism Launcher.</li><li>Environ 350 Mo d'espace libre (programme, sons officiels, cache des échantillons).</li></ul>
+<p><strong>Note Block Studio n'est pas nécessaire.</strong> S'il est installé, l'édition complète peut en plus utiliser ses sons personnalisés.</p>
+<h2>Téléchargement</h2>
+<ol><li>Ouvrez la page <strong>Téléchargement</strong> du site (<em>Releases</em> GitHub).</li><li>Téléchargez <code>MinecraftMidiStudio-&lt;version&gt;-windows.exe</code>.</li><li>Rangez-le dans le dossier de votre choix, par exemple <code>Documents\Minecraft MIDI Studio</code>.</li></ol>
+<h2>Premier lancement</h2>
+<ol><li>Double-cliquez sur <code>MinecraftMidiStudio.exe</code>.</li><li>Windows peut afficher <em>« Windows a protégé votre ordinateur »</em> (le programme n'est pas signé avec un certificat payant). Cliquez sur <strong>Informations complémentaires</strong>, puis <strong>Exécuter quand même</strong>. Cela n'arrive que la première fois.</li><li>Le premier démarrage prend quelques secondes de plus : le programme se décompresse une fois dans votre dossier de cache.</li><li>La page <strong>Accueil</strong> s'ouvre.</li></ol>
+<figure><img src="../../img/fr/01_home_free.png" alt="La page d&#x27;accueil" loading="lazy"><figcaption>La page d'accueil</figcaption></figure>
+<h2>Les sons officiels de Minecraft</h2>
+<p>Les sons des instruments et des mobs, et les textures des icônes, appartiennent à Mojang : ils ne sont pas dans le programme. Au premier besoin (ouverture du catalogue ou d'un projet) :</p>
+<ul><li>si Minecraft 1.21.1 est installé sur l'ordinateur, le logiciel utilise ses fichiers ;</li><li>sinon, il les <strong>télécharge lui-même depuis les serveurs officiels de Mojang</strong>, comme un launcher : environ 41 Mo, une seule fois, chaque fichier étant vérifié avec l'empreinte publiée par Mojang.</li></ul>
+<p>La progression s'affiche en bas de la fenêtre. Sans internet, le logiciel le signale ; le bouton <strong>Télécharger maintenant</strong> de la page <em>Paramètres</em> relance le téléchargement plus tard.</p>
+<h2>Où sont mes fichiers ?</h2>
+<table><thead><tr><th>Quoi</th><th>Où</th></tr></thead><tbody><tr><td>Paramètres et activation de la licence</td><td><code>%APPDATA%\MinecraftMidiStudio</code></td></tr><tr><td>Sons officiels téléchargés</td><td><code>%LOCALAPPDATA%\MinecraftMidiStudio\minecraft</code></td></tr><tr><td>Journaux, cache des échantillons, sauvegardes de mondes</td><td><code>%LOCALAPPDATA%\MinecraftMidiStudio</code></td></tr><tr><td>Vos projets</td><td>là où vous les enregistrez (fichiers <code>.mmsproj</code>)</td></tr></tbody></table>
+<h2>Désinstaller</h2>
+<p>Supprimez <code>MinecraftMidiStudio.exe</code>. Pour effacer aussi vos paramètres, les sons téléchargés, le cache et les sauvegardes, supprimez les deux dossiers ci-dessus. Rien d'autre n'est installé sur l'ordinateur.</p>
+<p><strong>Guide suivant :</strong> premiers réglages.</p><div class="pager"><a class="btn" href="../index.html#guides">← Tous les guides</a><a class="btn primary" href="02-settings.html">Suivant →</a></div></article>
+</main>
+<footer><div class="in">Logiciel non officiel. Non approuvé par Mojang Studios ni Microsoft et sans lien avec eux. Minecraft est une marque de Mojang AB.<br>Version 0.5.1 · <a href="https://github.com/YOUR-GITHUB-NAME/minecraft-midi-studio">GitHub</a> · <a href="../../fr/privacy.html">Confidentialité</a></div></footer>
+</body>
+</html>
