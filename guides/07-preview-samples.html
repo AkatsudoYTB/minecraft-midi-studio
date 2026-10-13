@@ -13,8 +13,8 @@
 <a class="brand" href="../index.html"><img src="../img/app.png" alt="">Minecraft MIDI Studio</a>
 <div class="links">
 <a href="../index.html#guides">Guides</a>
-<a href="https://github.com/YOUR-GITHUB-NAME/minecraft-midi-studio/releases/latest">Download (free)</a>
-<a href="https://ko-fi.com/YOUR-KOFI-NAME">Get the full edition</a>
+<a href="https://github.com/AkatsudoYTB/minecraft-midi-studio/releases/latest">Download (free)</a>
+<a href="https://ko-fi.com/s/f40cc7e66c">Get the full edition</a>
 <a href="../fr/guides/07-preview-samples.html" hreflang="fr">Français</a>
 </div></nav></header>
 <main>
@@ -23,13 +23,17 @@
 <h2>Preview (step 5)</h2>
 <figure><img src="../img/en/09_listen.png" alt="Converted preview" loading="lazy"><figcaption>Converted preview</figcaption></figure>
 <ol><li>The samples needed for the preview are prepared automatically (the first time takes a few seconds).</li><li><strong>Converted (Minecraft samples)</strong> plays the song as the game will: notes aligned on 50 ms ticks, each sound played in full, 8 velocity levels.</li><li><strong>Original MIDI</strong> switches back to the original at the same position, to compare.</li><li><strong>Listen to</strong> lets you hear one track only.</li></ol>
+<h3>Exporting the audio (full edition)</h3>
+<p><strong>Export the audio…</strong> saves the song as a file, for example for the soundtrack of a video:</p>
+<ul><li><strong>Sound</strong>: <em>Minecraft</em> (the real samples, as in the game) or <em>Original MIDI</em>;</li><li><strong>Tracks</strong>: all the selected tracks mixed, or a single one;</li><li><strong>Format</strong>: MP3, WAV, FLAC or OGG.</li></ul>
+<p>The file is at least as long as the song, which makes it easy to sync with a video.</p>
 <h2>Samples (step 6)</h2>
 <figure><img src="../img/en/10_samples.png" alt="Sample generation" loading="lazy"><figcaption>Sample generation</figcaption></figure>
 <p>One audio file is prepared <strong>for each note actually played</strong>, so Minecraft never has to change the pitch of a sound (that is what makes the result clean).</p>
-<ul><li><strong>Margin for /pitch</strong> — extra notes so that the in-game <code>/function music:pitch</code> command always finds a sample.</li><li><strong>Notes outside an instrument's range</strong> — moved to the nearest octave, skipped, or generated anyway.</li><li><strong>Maximum length of a sample</strong> — long sounds are shortened with a fade.</li><li><strong>Normalisation</strong> — same perceived volume for every note of an instrument.</li><li><strong>Method</strong> per instrument — <em>resampling</em> (classic note block sound) or <em>pitch only</em> (keeps the duration, better for voices).</li></ul>
+<ul><li><strong>Margin for /pitch</strong> — extra notes so that the in-game <code>/function music:&lt;name&gt;/pitch</code> command always finds a sample.</li><li><strong>Notes outside an instrument's range</strong> — moved to the nearest octave, skipped, or generated anyway.</li><li><strong>Maximum length of a sample</strong> — long sounds are shortened with a fade.</li><li><strong>Normalisation</strong> — same perceived volume for every note of an instrument.</li><li><strong>Method</strong> per instrument — <em>resampling</em> (classic note block sound) or <em>pitch only</em> (keeps the duration, better for voices).</li></ul>
 <p>Click <strong>Generate the samples</strong>. Samples already made with the same settings are reused from the cache.</p>
 <p><strong>Next guide:</strong> the structure.</p><div class="pager"><a class="btn" href="06-instruments.html">← Previous</a><a class="btn primary" href="08-structure.html">Next →</a></div></article>
 </main>
-<footer><div class="in">Unofficial software. Not approved by or associated with Mojang Studios or Microsoft. Minecraft is a trademark of Mojang AB.<br>Version 0.5.1 · <a href="https://github.com/YOUR-GITHUB-NAME/minecraft-midi-studio">GitHub</a> · <a href="../privacy.html">Privacy</a></div></footer>
+<footer><div class="in">Unofficial software. Not approved by or associated with Mojang Studios or Microsoft. Minecraft is a trademark of Mojang AB.<br>Minecraft MIDI Studio by Akatsudo · Version 0.7.0 · <a href="https://github.com/AkatsudoYTB/minecraft-midi-studio">GitHub</a> · <a href="../privacy.html">Privacy</a></div></footer>
 </body>
 </html>

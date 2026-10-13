@@ -13,22 +13,23 @@
 <a class="brand" href="../index.html"><img src="../img/app.png" alt="">Minecraft MIDI Studio</a>
 <div class="links">
 <a href="../index.html#guides">Guides</a>
-<a href="https://github.com/YOUR-GITHUB-NAME/minecraft-midi-studio/releases/latest">Download (free)</a>
-<a href="https://ko-fi.com/YOUR-KOFI-NAME">Get the full edition</a>
+<a href="https://github.com/AkatsudoYTB/minecraft-midi-studio/releases/latest">Download (free)</a>
+<a href="https://ko-fi.com/s/f40cc7e66c">Get the full edition</a>
 <a href="../fr/guides/10-generate.html" hreflang="fr">Français</a>
 </div></nav></header>
 <main>
 <article><div class="dl"><a class="btn" href="../pdf/en/10-generate.pdf">⬇ PDF</a></div><h1>Step 10 — Generate, install and check (wizard steps 10 and 11)</h1>
 <h2>Generation (step 10)</h2>
 <figure><img src="../img/en/15_generate_after.png" alt="Generation" loading="lazy"><figcaption>Generation</figcaption></figure>
-<ol><li>The <strong>Checks</strong> list must be green: world closed in Minecraft, structure and samples ready, position confirmed.</li><li><strong>Packs and options</strong> — pack name, description, version, icon.</li><li>Click <strong>Generate and install in the world…</strong>.</li><li>A <strong>confirmation window</strong> lists exactly what will happen: files written, structure area, world backup. Confirm.</li><li>The software makes a <strong>ZIP backup of the world</strong>, then installs:<ul><li>the datapack in <code>datapacks/music_mmstudio.zip</code>;</li><li>the <strong>world's resource pack</strong> (<code>resources.zip</code> in 1.21, <code>resourcepacks/resources.zip</code> in 26.x): Minecraft loads it automatically when the world opens, and only in that world.</li></ul></li></ol>
+<ol><li>The <strong>Checks</strong> list must be green: world closed in Minecraft, structure and samples ready, place (in the game with the wand, or position confirmed).<p>The <strong>pack name</strong> gives the name of the song in the game: “Miss You” → <code>/function music:miss_you/…</code>.</p></li><li><strong>Packs and options</strong> — pack name, description, version, icon.</li><li>Click <strong>Generate and install in the world…</strong>.</li><li>A <strong>confirmation window</strong> lists exactly what will happen: files written, size of the structure, other songs of the world, world backup. Confirm.</li><li>The software makes a <strong>ZIP backup of the world</strong>, then installs:<ul><li>the song's datapack in <code>datapacks/music_&lt;name&gt;.zip</code>;</li><li>its sounds in <code>mmstudio_packs/&lt;name&gt;.zip</code>;</li><li>the <strong>world's resource pack</strong> (<code>resources.zip</code> in 1.21, <code>resourcepacks/resources.zip</code> in 26.x), which gathers the sounds of <strong>all</strong> the songs installed in that world: Minecraft loads it automatically when the world opens, and only in that world.</li></ul></li></ol>
+<p>To put several songs in the same world (full edition; the free edition keeps a single one), generate and install each project one after the other: the songs already installed are kept (the <strong>Songs installed in this world</strong> line lists them). <strong>Remove a song from the world…</strong> takes its datapack and its sounds out (they are moved to the backups); remove its structure in the game first with <code>/function music:&lt;name&gt;/remove</code>.</p>
 <p>No file is ever deleted: a replaced file is moved into the backup folder.</p>
 <p><strong>Generate the files only</strong> writes nothing into the world (for a server or a manual installation).</p>
 <h2>Check (step 11)</h2>
 <figure><img src="../img/en/16_verify.png" alt="Check" loading="lazy"><figcaption>Check</figcaption></figure>
-<p>Click <strong>Check</strong>: the files are re-read exactly as the game will read them (every sound event exists and is a valid OGG Vorbis file, every sound used by the datapack is in the resource pack, the installed files are identical). The in-game commands are listed below.</p>
+<p>Click <strong>Check</strong>: the files are re-read exactly as the game will read them (every sound event exists and is a valid OGG Vorbis file, every sound used by the datapack is in the resource pack, the installed datapack is identical and the world pack holds the song's sounds). The song's commands are listed below.</p>
 <p><strong>Next guide:</strong> in Minecraft.</p><div class="pager"><a class="btn" href="09-preview-position.html">← Previous</a><a class="btn primary" href="11-in-game.html">Next →</a></div></article>
 </main>
-<footer><div class="in">Unofficial software. Not approved by or associated with Mojang Studios or Microsoft. Minecraft is a trademark of Mojang AB.<br>Version 0.5.1 · <a href="https://github.com/YOUR-GITHUB-NAME/minecraft-midi-studio">GitHub</a> · <a href="../privacy.html">Privacy</a></div></footer>
+<footer><div class="in">Unofficial software. Not approved by or associated with Mojang Studios or Microsoft. Minecraft is a trademark of Mojang AB.<br>Minecraft MIDI Studio by Akatsudo · Version 0.7.0 · <a href="https://github.com/AkatsudoYTB/minecraft-midi-studio">GitHub</a> · <a href="../privacy.html">Privacy</a></div></footer>
 </body>
 </html>

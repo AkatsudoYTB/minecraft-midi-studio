@@ -13,22 +13,23 @@
 <a class="brand" href="../../fr/index.html"><img src="../../img/app.png" alt="">Minecraft MIDI Studio</a>
 <div class="links">
 <a href="../../fr/index.html#guides">Guides</a>
-<a href="https://github.com/YOUR-GITHUB-NAME/minecraft-midi-studio/releases/latest">Télécharger (gratuit)</a>
-<a href="https://ko-fi.com/YOUR-KOFI-NAME">Obtenir l'édition complète</a>
+<a href="https://github.com/AkatsudoYTB/minecraft-midi-studio/releases/latest">Télécharger (gratuit)</a>
+<a href="https://ko-fi.com/s/f40cc7e66c">Obtenir l'édition complète</a>
 <a href="../../guides/10-generate.html" hreflang="en">English</a>
 </div></nav></header>
 <main>
 <article><div class="dl"><a class="btn" href="../../pdf/fr/10-generate.pdf">⬇ PDF</a></div><h1>Étape 10 — Générer, installer et vérifier (étapes 10 et 11 de l'assistant)</h1>
 <h2>Génération (étape 10)</h2>
 <figure><img src="../../img/fr/15_generate_after.png" alt="Génération" loading="lazy"><figcaption>Génération</figcaption></figure>
-<ol><li>La liste <strong>Vérifications</strong> doit être verte : monde fermé dans Minecraft, structure et échantillons prêts, position validée.</li><li><strong>Packs et options</strong> — nom du pack, description, version, icône.</li><li>Cliquez sur <strong>Générer et installer dans le monde…</strong>.</li><li>Une <strong>fenêtre de confirmation</strong> dit exactement ce qui va se passer : fichiers écrits, zone de la structure, sauvegarde du monde. Confirmez.</li><li>Le logiciel fait une <strong>sauvegarde ZIP du monde</strong>, puis installe :<ul><li>le datapack dans <code>datapacks/music_mmstudio.zip</code> ;</li><li>le <strong>pack de ressources du monde</strong> (<code>resources.zip</code> en 1.21, <code>resourcepacks/resources.zip</code> en 26.x) : Minecraft le charge tout seul à l'ouverture du monde, et seulement dans ce monde.</li></ul></li></ol>
+<ol><li>La liste <strong>Vérifications</strong> doit être verte : monde fermé dans Minecraft, structure et échantillons prêts, emplacement (dans le jeu avec la baguette, ou position validée).<p>Le <strong>nom du pack</strong> donne le nom de la musique dans le jeu : « Miss You » → <code>/function music:miss_you/…</code>.</p></li><li><strong>Packs et options</strong> — nom du pack, description, version, icône.</li><li>Cliquez sur <strong>Générer et installer dans le monde…</strong>.</li><li>Une <strong>fenêtre de confirmation</strong> dit exactement ce qui va se passer : fichiers écrits, taille de la structure, autres musiques du monde, sauvegarde du monde. Confirmez.</li><li>Le logiciel fait une <strong>sauvegarde ZIP du monde</strong>, puis installe :<ul><li>le datapack de la musique dans <code>datapacks/music_&lt;nom&gt;.zip</code> ;</li><li>ses sons dans <code>mmstudio_packs/&lt;nom&gt;.zip</code> ;</li><li>le <strong>pack de ressources du monde</strong> (<code>resources.zip</code> en 1.21, <code>resourcepacks/resources.zip</code> en 26.x), qui réunit les sons de <strong>toutes</strong> les musiques installées dans ce monde : Minecraft le charge tout seul à l'ouverture du monde, et seulement dans ce monde.</li></ul></li></ol>
+<p>Pour mettre plusieurs musiques dans le même monde (édition complète ; l'édition gratuite en garde une seule), générez et installez chaque projet l'un après l'autre : les musiques déjà installées sont conservées (la ligne <strong>Musiques installées dans ce monde</strong> les liste). <strong>Retirer une musique du monde…</strong> enlève son datapack et ses sons (ils sont déplacés dans les sauvegardes) ; supprimez d'abord sa structure dans le jeu avec <code>/function music:&lt;nom&gt;/remove</code>.</p>
 <p>Aucun fichier n'est supprimé : un fichier remplacé est déplacé dans le dossier des sauvegardes.</p>
 <p><strong>Générer les fichiers seulement</strong> n'écrit rien dans le monde (pour un serveur ou une installation manuelle).</p>
 <h2>Vérification (étape 11)</h2>
 <figure><img src="../../img/fr/16_verify.png" alt="Vérification" loading="lazy"><figcaption>Vérification</figcaption></figure>
-<p>Cliquez sur <strong>Vérifier</strong> : les fichiers sont relus exactement comme le jeu les lira (chaque événement sonore existe et est un OGG Vorbis valide, chaque son utilisé par le datapack est dans le resource pack, les fichiers installés sont identiques). Les commandes du jeu sont listées en dessous.</p>
+<p>Cliquez sur <strong>Vérifier</strong> : les fichiers sont relus exactement comme le jeu les lira (chaque événement sonore existe et est un OGG Vorbis valide, chaque son utilisé par le datapack est dans le resource pack, le datapack installé est identique et le pack du monde contient bien les sons de la musique). Les commandes de la musique sont listées en dessous.</p>
 <p><strong>Guide suivant :</strong> dans Minecraft.</p><div class="pager"><a class="btn" href="09-preview-position.html">← Précédent</a><a class="btn primary" href="11-in-game.html">Suivant →</a></div></article>
 </main>
-<footer><div class="in">Logiciel non officiel. Non approuvé par Mojang Studios ni Microsoft et sans lien avec eux. Minecraft est une marque de Mojang AB.<br>Version 0.5.1 · <a href="https://github.com/YOUR-GITHUB-NAME/minecraft-midi-studio">GitHub</a> · <a href="../../fr/privacy.html">Confidentialité</a></div></footer>
+<footer><div class="in">Logiciel non officiel. Non approuvé par Mojang Studios ni Microsoft et sans lien avec eux. Minecraft est une marque de Mojang AB.<br>Minecraft MIDI Studio par Akatsudo · Version 0.7.0 · <a href="https://github.com/AkatsudoYTB/minecraft-midi-studio">GitHub</a> · <a href="../../fr/privacy.html">Confidentialité</a></div></footer>
 </body>
 </html>

@@ -13,8 +13,8 @@
 <a class="brand" href="../../fr/index.html"><img src="../../img/app.png" alt="">Minecraft MIDI Studio</a>
 <div class="links">
 <a href="../../fr/index.html#guides">Guides</a>
-<a href="https://github.com/YOUR-GITHUB-NAME/minecraft-midi-studio/releases/latest">Télécharger (gratuit)</a>
-<a href="https://ko-fi.com/YOUR-KOFI-NAME">Obtenir l'édition complète</a>
+<a href="https://github.com/AkatsudoYTB/minecraft-midi-studio/releases/latest">Télécharger (gratuit)</a>
+<a href="https://ko-fi.com/s/f40cc7e66c">Obtenir l'édition complète</a>
 <a href="../../guides/07-preview-samples.html" hreflang="en">English</a>
 </div></nav></header>
 <main>
@@ -23,13 +23,17 @@
 <h2>Préécoute (étape 5)</h2>
 <figure><img src="../../img/fr/09_listen.png" alt="Préécoute convertie" loading="lazy"><figcaption>Préécoute convertie</figcaption></figure>
 <ol><li>Les échantillons nécessaires à la préécoute sont préparés tout seuls (la première fois prend quelques secondes).</li><li><strong>Converti (échantillons Minecraft)</strong> joue le morceau comme le jeu le fera : notes calées sur les ticks de 50 ms, chaque son joué en entier, 8 niveaux de vélocité.</li><li><strong>MIDI original</strong> revient à l'original à la même position, pour comparer.</li><li><strong>Écouter</strong> permet de n'entendre qu'une piste.</li></ol>
+<h3>Exporter l'audio (édition complète)</h3>
+<p><strong>Exporter l'audio…</strong> enregistre le morceau dans un fichier, par exemple pour la bande-son d'une vidéo :</p>
+<ul><li><strong>Son</strong> : <em>Minecraft</em> (les vrais échantillons, comme dans le jeu) ou <em>MIDI original</em> ;</li><li><strong>Pistes</strong> : toutes les pistes sélectionnées mélangées, ou une seule ;</li><li><strong>Format</strong> : MP3, WAV, FLAC ou OGG.</li></ul>
+<p>Le fichier dure au moins autant que le morceau, ce qui facilite le calage sur une vidéo.</p>
 <h2>Échantillons (étape 6)</h2>
 <figure><img src="../../img/fr/10_samples.png" alt="Génération des échantillons" loading="lazy"><figcaption>Génération des échantillons</figcaption></figure>
 <p>Un fichier audio est préparé <strong>pour chaque note réellement jouée</strong> : Minecraft n'a jamais à changer la hauteur d'un son (c'est ce qui rend le résultat propre).</p>
-<ul><li><strong>Marge pour /pitch</strong> — des notes en plus pour que la commande <code>/function music:pitch</code> trouve toujours un échantillon.</li><li><strong>Notes hors de la plage d'un instrument</strong> — ramenées à l'octave, ignorées, ou générées quand même.</li><li><strong>Durée maximale d'un échantillon</strong> — les sons longs sont raccourcis avec un fondu.</li><li><strong>Normalisation</strong> — même volume perçu pour toutes les notes d'un instrument.</li><li><strong>Méthode</strong> par instrument — <em>rééchantillonnage</em> (son de note block classique) ou <em>hauteur seule</em> (garde la durée, mieux pour les voix).</li></ul>
+<ul><li><strong>Marge pour /pitch</strong> — des notes en plus pour que la commande <code>/function music:&lt;nom&gt;/pitch</code> trouve toujours un échantillon.</li><li><strong>Notes hors de la plage d'un instrument</strong> — ramenées à l'octave, ignorées, ou générées quand même.</li><li><strong>Durée maximale d'un échantillon</strong> — les sons longs sont raccourcis avec un fondu.</li><li><strong>Normalisation</strong> — même volume perçu pour toutes les notes d'un instrument.</li><li><strong>Méthode</strong> par instrument — <em>rééchantillonnage</em> (son de note block classique) ou <em>hauteur seule</em> (garde la durée, mieux pour les voix).</li></ul>
 <p>Cliquez sur <strong>Générer les échantillons</strong>. Les échantillons déjà faits avec les mêmes réglages sont repris du cache.</p>
 <p><strong>Guide suivant :</strong> la structure.</p><div class="pager"><a class="btn" href="06-instruments.html">← Précédent</a><a class="btn primary" href="08-structure.html">Suivant →</a></div></article>
 </main>
-<footer><div class="in">Logiciel non officiel. Non approuvé par Mojang Studios ni Microsoft et sans lien avec eux. Minecraft est une marque de Mojang AB.<br>Version 0.5.1 · <a href="https://github.com/YOUR-GITHUB-NAME/minecraft-midi-studio">GitHub</a> · <a href="../../fr/privacy.html">Confidentialité</a></div></footer>
+<footer><div class="in">Logiciel non officiel. Non approuvé par Mojang Studios ni Microsoft et sans lien avec eux. Minecraft est une marque de Mojang AB.<br>Minecraft MIDI Studio par Akatsudo · Version 0.7.0 · <a href="https://github.com/AkatsudoYTB/minecraft-midi-studio">GitHub</a> · <a href="../../fr/privacy.html">Confidentialité</a></div></footer>
 </body>
 </html>
